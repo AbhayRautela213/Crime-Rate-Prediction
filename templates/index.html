@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+    <link rel="icon" href="static/images/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class = "title">Crime Rate Predictor</h1>
+        <h2 class = "tagline">Unlock safety: Reduce crime rate together</h2>
+    </header>
+
+    <section class="section1">
+        <form action="/predict" method="POST">
+            <table class="table1">
+                <tr>
+                    <td class="label">
+                        <label>Select City Name</label>
+                    </td>
+                    <td class="sel">
+                        <select name="city">
+                            <option value="0">Ahmedabad</option>
+                            <option value="1">Bengaluru</option>
+                            <option value="2">Chennai</option>
+                            <option value="3">Coimbatore</option>
+                            <option value="4">Delhi</option>
+                            <option value="5">Ghaziabad</option>
+                            <option value="6">Hyderabad</option>
+                            <option value="7">Indore</option>
+                            <option value="8">Jaipur</option>
+                            <option value="9">Kanpur</option>
+                            <option value="10">Kochi</option>
+                            <option value="11">Kolkata</option>
+                            <option value="12">Kozhikode</option>
+                            <option value="13">Lucknow</option>
+                            <option value="14">Mumbai</option>
+                            <option value="15">Nagpur</option>
+                            <option value="16">Patna</option>
+                            <option value="17">Pune</option>
+                            <option value="18">Surat</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label>Select Crime Type</label>
+                    </td>
+                    <td class="sel">
+                        <select name="crime">
+                            <option value="9">Murder</option>
+                            <option value="8">Kidnapping</option>
+                            <option value="7">Economic Offences</option>
+                            <option value="6">Cyber Crimes</option>
+                            <option value="5">Crime against women</option>
+                            <option value="4">Crime against children</option>
+                            <option value="3">Crime against Senior Citizen</option>
+                            <option value="2">Crime against ST</option>
+                            <option value="1">Crime against SC</option>
+                            <option value="0">Crime Committed by Juveniles</option>
+                        </select>
+                    </td>                  
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label>Select Year</label>
+                    </td>
+                    <td class="sel" >
+                        <select name="year" id="year-dropdown"></select>
+                    </td> 
+                </tr>
+            </table>
+
+            <div class="button" >
+                <input type="submit" class="btn id="predict_button"" value="Predict" >
+            </div>               
+        </form>          
+    </section>    
+
+    <section>
+        <h2 id="about">About the Application</h2>
+
+        <p id="introduction">
+            Crime rate prediction has become an important tool for law enforcement agencies 
+            to help them better understand patterns of crime and anticipate where crime is 
+            likely to occur. By predicting future crime trends, law enforcement agencies can 
+            better allocate resources to areas that are likely to experience increases in 
+            criminal activity. This could lead to a decrease in crime overall, as well as 
+            an increase in public safety. Additionally, crime rate prediction can help police 
+            departments develop better strategies for responding to crime as it happens.
+            <br> <br>
+            The dataset is prepared manually based on the publication available on the Indian 
+            National Crime Rate Bureau (NCRB) official website. This data provides statistics 
+            on crimes committed in 19 metropolitan cities during the year 2014 to 2021. 
+            With the help of this application, we can predict the crime rates for 10 different 
+            categories of crime that are likely to occur in 19 Indian metropolitan cities over 
+            the next few years. It includes statistics on 10 different categories of crime, 
+            including murder, kidnapping, crime against women, crime against children, 
+            crime committed by juveniles, crime against senior citizens, crime against SC, 
+            crime against ST, economic offences and cyber crimes. 
+            <br><br>
+            The system uses scikit-learn's Random Forest Regression model, which takes year, 
+            city name, and crime type data as inputs. Random Forest Regression is a type of 
+            an ensemble learning techniques that can be used to predict continuous values 
+            from a collection of data. It works by creating a large number of "decision trees" 
+            which each make a prediction about the target variable. Then it averages all the 
+            predictions to come up with a final prediction. This makes it more accurate than 
+            a single decision tree. The model predicts the crime rate with an accuracy of 93.20% 
+            on testing dataset.
+            <br><br>
+
+            <a href="https://docs.google.com/document/d/1NpkwySpsMkKkFX8sYMDFvi-OUZzEFB58/edit?usp=sharing&ouid=102962784416590527257&rtpof=true&sd=true">
+                Click here to access the project report.
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div id="developer">
+                <h3 >Developed By: &emsp; Abhay Rautela</h3>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/abhay-rautela-52a2b3217/" target="_blank">
+                    <img src="static/images/linkedin.png" alt="linkedIn" width="35" >                
+                </a>  
+            </div>
+            <div id="github">
+                <a href="https://github.com/CyborBot" target="_blank">
+                    <img src="static/images/github.png" alt="GitHub" width="35">
+                </a>
+            </div>
+        </div>       
+    </footer>
+
+    <script src="static/main.js"></script>    
+</body>
+</html>

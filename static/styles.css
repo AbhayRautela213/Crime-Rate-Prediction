@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lora', serif;
+    background-color: #fff2df;
+    color: black;   
+}
+
+header{    
+    background-color:  #002244;
+    color: #fff2df; 
+    border-bottom: solid 3px;
+}
+.title{
+    margin: 0px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic; 
+}
+.tagline{
+    margin: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.section1{
+    border-bottom: 2px solid black;
+    min-height: 500px;
+}
+
+table.table1{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 400;
+}
+td.label{ 
+    width: 300px;
+    height: 50px;
+}
+td.sel{
+    width: 300px;
+    height: 50px;
+}
+select{
+    padding: 5px;
+    width: 200px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: oblique;
+    font-weight: 400;    
+    border: solid 2px #ffe5be;
+    border-radius: 10px;
+}
+
+.button{
+    margin: 25px;
+    text-align: center; 
+    padding: 20px;   
+}
+.btn{
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: oblique;
+    font-weight: 900;
+    background-color: #002244;
+    color: #fff2df;   
+    border: solid 2px #ffe5be;    
+    border-radius: 10px;
+}
+.btn:hover{   
+    background-color: #ffe5be;
+    color: #002244;
+    border: solid 2px #002244; 
+}
+
+.prediction{
+    padding-bottom: 50px;
+    border-bottom: 2px solid;
+}
+table.table2{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr.r1{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 400;
+}
+tr.r2{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+table.table3{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid black;
+}
+td.result{
+    width: 300px;
+    height: 50px;
+}
+.button2{
+    text-align: center;
+    margin-top: 45px;
+}
+
+#about{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: #002244;
+}
+#introduction{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.footer{
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(6 23  52);
+    color: white;
+}
+#developer{
+    flex-basis: 100%;
+    text-align: center;
+}
+#linkedin{    
+    padding-right: 20px;    
+}
+#github{
+    padding-left: 20px;
+}

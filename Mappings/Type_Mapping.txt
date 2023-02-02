@@ -1,0 +1,10 @@
+Crime Committed by Juveniles - 0
+Crime against SC - 1
+Crime against ST - 2
+Crime against Senior Citizen - 3
+Crime against children - 4
+Crime against women - 5
+Cyber Crimes - 6
+Economic Offences - 7
+Kidnapping - 8
+Murder - 9
